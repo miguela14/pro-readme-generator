@@ -16,7 +16,7 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'Click enter for table of content.',
+        message: 'Would you like a table of contents?',
         name: 'tableOfContents'
     },
     {
@@ -72,9 +72,9 @@ function init() {
     inquirer
     .prompt(questions)
     .then((answers) => {
-        console.log(answers);
+        // console.log(answers);
         const markdownString = generateMarkdown(answers);
-        console.log(markdownString)
+        // console.log(markdownString)
         writeToFile('README.md', markdownString);
         
     })

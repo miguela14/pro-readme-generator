@@ -59,47 +59,47 @@ renderLicenseSection();
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-          # ${data.title}
-          
-          ## Description
-          
-          ${data.description}
-          
-          ## Table of Contents
-          
-          - [Installation](#installation)
-          - [Usage](#usage)
-          - [License](#license)
-          - [Contributing](#contributing)
-          - [Tests](#tests)
-          - [Questions](#questions)
-          
-          ## Installation
-          
-          ${data.installation}
-          
-          ## Usage
-          
-          ${data.usage}
-          
-          ## License
-          
-          This application is covered by the ${data.license} license. 
-          
-          ![License](https://img.shields.io/badge/license-${data.license}-blue.svg)
-          
-          ## Contributing
-          
-          ${data.contribution}
-          
-          ## Tests
-          
-          ${data.tests}
-          
-          ## Questions
-          
-          For any additional questions, please email me at ${data.questions}. 
-          You can also check out my GitHub profile at https://github.com/${data.username}.
+# ${data.title}
+
+### Description
+
+${data.description}
+
+### Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+### Installation
+
+${data.installation}
+
+### Usage
+
+${data.usage}
+
+### License
+
+This application is covered by the ${data.license} license. 
+
+![License](https://img.shields.io/badge/license-${data.license}-blue.svg)
+
+### Contributing
+
+${data.contribution}
+
+### Tests
+
+${data.tests}
+
+### Questions
+
+For any additional questions, please email me at ${data.questions}. 
+You can also check out my GitHub profile at https://github.com/${data.username}.
           `;
 }
 
